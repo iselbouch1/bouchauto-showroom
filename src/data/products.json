@@ -1,0 +1,237 @@
+[
+  {
+    "id": "1",
+    "name": "Tapis de sol premium en cuir",
+    "slug": "tapis-sol-premium-cuir",
+    "shortDescription": "Tapis de sol haut de gamme en cuir véritable avec surpiqûres",
+    "description": "Transformez l'intérieur de votre véhicule avec ces tapis de sol premium en cuir véritable. Fabriqués avec une attention méticuleuse aux détails, ils offrent une protection optimale tout en ajoutant une touche d'élégance. Les surpiqûres contrastées et le logo brodé témoignent d'un savoir-faire exceptionnel.",
+    "categoryIds": ["1"],
+    "tags": ["premium", "cuir", "noir"],
+    "isVisible": true,
+    "isFeatured": true,
+    "isNew": true,
+    "sortOrder": 1,
+    "images": [
+      {
+        "url": "/images/products/tapis-cuir-1.jpg",
+        "alt": "Tapis de sol premium en cuir - vue d'ensemble",
+        "isCover": true
+      },
+      {
+        "url": "/images/products/tapis-cuir-2.jpg",
+        "alt": "Tapis de sol premium - détail surpiqûres"
+      },
+      {
+        "url": "/images/products/tapis-cuir-3.jpg",
+        "alt": "Tapis de sol premium - installation"
+      }
+    ],
+    "specs": {
+      "Matériau": "Cuir véritable",
+      "Couleur": "Noir avec surpiqûres rouges",
+      "Garantie": "2 ans",
+      "Entretien": "Facile - nettoyage à l'eau savonneuse",
+      "Compatibilité": "Universel - ajustable"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Kit LED d'ambiance RGB",
+    "slug": "kit-led-ambiance-rgb",
+    "shortDescription": "Éclairage d'ambiance intérieur avec contrôle smartphone",
+    "description": "Créez l'ambiance parfaite dans votre véhicule avec ce kit LED RGB complet. Contrôlez les couleurs, l'intensité et les effets directement depuis votre smartphone. Installation facile sans modification du véhicule, alimentation via port USB.",
+    "categoryIds": ["1", "3", "4"],
+    "tags": ["led", "rgb", "connecté", "nouveau"],
+    "isVisible": true,
+    "isFeatured": true,
+    "isNew": true,
+    "sortOrder": 2,
+    "images": [
+      {
+        "url": "/images/products/led-rgb-1.jpg",
+        "alt": "Kit LED RGB - éclairage bleu",
+        "isCover": true
+      },
+      {
+        "url": "/images/products/led-rgb-2.jpg",
+        "alt": "Kit LED RGB - éclairage rouge"
+      }
+    ],
+    "specs": {
+      "Type": "Bandes LED RGB",
+      "Longueur": "4 x 30cm",
+      "Contrôle": "Application smartphone (iOS/Android)",
+      "Couleurs": "16 millions",
+      "Alimentation": "USB 5V",
+      "Installation": "Adhésif 3M"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Pare-soleil pare-brise magnétique",
+    "slug": "pare-soleil-parebrise-magnetique",
+    "shortDescription": "Protection UV maximale avec installation instantanée",
+    "description": "Protégez efficacement votre habitacle de la chaleur avec ce pare-soleil innovant à fixation magnétique. Installation en quelques secondes sans ventouses ni clips. Tissu réfléchissant haute qualité bloquant 99% des UV.",
+    "categoryIds": ["1", "2"],
+    "tags": ["protection", "été", "pratique"],
+    "isVisible": true,
+    "isFeatured": false,
+    "isNew": false,
+    "sortOrder": 3,
+    "images": [
+      {
+        "url": "/images/products/pare-soleil-1.jpg",
+        "alt": "Pare-soleil magnétique installé",
+        "isCover": true
+      }
+    ],
+    "specs": {
+      "Matériau": "Tissu réfléchissant multicouche",
+      "Dimensions": "145 x 70 cm",
+      "Protection UV": "99%",
+      "Fixation": "Aimants néodyme",
+      "Pliage": "Compact - rangement inclus"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Support smartphone avec chargeur sans fil",
+    "slug": "support-smartphone-chargeur-sans-fil",
+    "shortDescription": "Support magnétique avec charge rapide Qi 15W",
+    "description": "Gardez votre smartphone à portée de vue tout en le chargeant sans fil. Rotation 360° pour un positionnement optimal, fixation ventilation ultra-stable, compatible avec tous les smartphones Qi.",
+    "categoryIds": ["4"],
+    "tags": ["tech", "pratique", "chargeur"],
+    "isVisible": true,
+    "isFeatured": true,
+    "isNew": false,
+    "sortOrder": 4,
+    "images": [
+      {
+        "url": "/images/products/support-phone-1.jpg",
+        "alt": "Support smartphone avec chargeur sans fil",
+        "isCover": true
+      }
+    ],
+    "specs": {
+      "Puissance": "15W (charge rapide)",
+      "Compatibilité": "Tous smartphones Qi",
+      "Fixation": "Grille ventilation",
+      "Rotation": "360°",
+      "Certification": "Qi certified"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Diffuseur de parfum premium",
+    "slug": "diffuseur-parfum-premium",
+    "shortDescription": "Diffuseur élégant avec recharges naturelles",
+    "description": "Élégant diffuseur de parfum en métal brossé avec recharges aux huiles essentielles naturelles. Design minimaliste qui s'intègre parfaitement à tous les intérieurs. Fixation discrète sur grille ventilation.",
+    "categoryIds": ["1"],
+    "tags": ["luxe", "parfum", "design"],
+    "isVisible": true,
+    "isFeatured": false,
+    "isNew": true,
+    "sortOrder": 5,
+    "images": [
+      {
+        "url": "/images/products/diffuseur-1.jpg",
+        "alt": "Diffuseur de parfum premium",
+        "isCover": true
+      }
+    ],
+    "specs": {
+      "Matériau": "Aluminium brossé",
+      "Parfums": "6 recharges incluses",
+      "Durée": "30 jours par recharge",
+      "Installation": "Clip grille ventilation",
+      "Dimensions": "4 x 6 cm"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Jantes LED 17 pouces",
+    "slug": "jantes-led-17-pouces",
+    "shortDescription": "Jantes aluminium avec éclairage LED intégré",
+    "description": "Démarquez-vous avec ces jantes en aluminium forgé équipées d'un système d'éclairage LED RGB intégré. Contrôle via application mobile, multiples modes d'animation, étanchéité IP67.",
+    "categoryIds": ["2", "3"],
+    "tags": ["jantes", "led", "tuning", "best-seller"],
+    "isVisible": true,
+    "isFeatured": true,
+    "isNew": false,
+    "sortOrder": 6,
+    "images": [
+      {
+        "url": "/images/products/jantes-led-1.jpg",
+        "alt": "Jantes LED 17 pouces - vue de face",
+        "isCover": true
+      },
+      {
+        "url": "/images/products/jantes-led-2.jpg",
+        "alt": "Jantes LED - éclairage en action"
+      }
+    ],
+    "specs": {
+      "Taille": "17 pouces",
+      "Matériau": "Aluminium forgé",
+      "LED": "RGB programmables",
+      "Étanchéité": "IP67",
+      "Contrôle": "Application mobile",
+      "Alimentation": "Batterie rechargeable"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Kit de nettoyage écologique",
+    "slug": "kit-nettoyage-ecologique",
+    "shortDescription": "Produits d'entretien biodégradables et efficaces",
+    "description": "Kit complet de nettoyage automobile avec produits 100% biodégradables. Formules haute performance sans substances nocives. Coffret premium avec chiffons microfibre professionnels.",
+    "categoryIds": ["5"],
+    "tags": ["écologique", "nettoyage", "kit"],
+    "isVisible": true,
+    "isFeatured": false,
+    "isNew": false,
+    "sortOrder": 7,
+    "images": [
+      {
+        "url": "/images/products/kit-nettoyage-1.jpg",
+        "alt": "Kit de nettoyage écologique complet",
+        "isCover": true
+      }
+    ],
+    "specs": {
+      "Contenu": "Shampoing, polish, nettoyant jantes, vitres",
+      "Volume": "4 x 500ml",
+      "Composition": "100% biodégradable",
+      "Accessoires": "3 chiffons microfibre + éponge",
+      "Certification": "Écolabel européen"
+    }
+  },
+  {
+    "id": "8",
+    "name": "Caméra de recul HD sans fil",
+    "slug": "camera-recul-hd-sans-fil",
+    "shortDescription": "Installation facile, vision nocturne, écran 4.3 pouces",
+    "description": "Facilitez vos manœuvres avec cette caméra de recul HD sans fil. Transmission numérique sans latence, vision nocturne infrarouge, écran LCD couleur haute définition. Installation simple sans perçage.",
+    "categoryIds": ["4", "6"],
+    "tags": ["sécurité", "caméra", "tech"],
+    "isVisible": true,
+    "isFeatured": true,
+    "isNew": false,
+    "sortOrder": 8,
+    "images": [
+      {
+        "url": "/images/products/camera-1.jpg",
+        "alt": "Caméra de recul HD avec écran",
+        "isCover": true
+      }
+    ],
+    "specs": {
+      "Résolution": "1280x720 HD",
+      "Écran": "4.3 pouces LCD",
+      "Vision nocturne": "Oui (LED infrarouge)",
+      "Angle": "170°",
+      "Installation": "Sans fil - pas de câblage",
+      "Étanchéité": "IP68"
+    }
+  }
+]

@@ -1,73 +1,179 @@
-# Welcome to your Lovable project
+# Bouch Auto - Catalogue Vitrine
 
-## Project info
+Application front-end moderne pour un catalogue d'accessoires et décorations automobiles.
 
-**URL**: https://lovable.dev/projects/56683139-87bb-4719-9842-9fd48d9e25e3
+## 🚀 Technologies
 
-## How can I edit this code?
+- **React** 18 + **TypeScript**
+- **Vite** (build tool ultra-rapide)
+- **Tailwind CSS** (design system moderne)
+- **React Router** (navigation)
+- **React Query** (gestion data/cache)
+- **shadcn/ui** (composants UI)
 
-There are several ways of editing your application.
+## 📦 Installation
 
-**Use Lovable**
+```bash
+# Installer les dépendances
+npm install
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/56683139-87bb-4719-9842-9fd48d9e25e3) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Lancer le serveur de développement
 npm run dev
+
+# Build pour production
+npm run build
+
+# Preview du build
+npm run preview
+
+# Lint du code
+npm run lint
 ```
 
-**Edit a file directly in GitHub**
+L'application sera accessible sur `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎨 Architecture
 
-**Use GitHub Codespaces**
+### Structure des dossiers
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+src/
+├── components/          # Composants réutilisables
+│   ├── ui/             # Composants UI de base (shadcn)
+│   ├── Header.tsx      # En-tête avec navigation et recherche
+│   ├── Footer.tsx      # Pied de page
+│   ├── ProductCard.tsx # Carte produit
+│   ├── ProductGrid.tsx # Grille de produits
+│   └── CategoryCard.tsx# Carte catégorie
+├── pages/              # Pages de l'application
+│   ├── Index.tsx       # Page d'accueil
+│   ├── CategoryPage.tsx# Page catégorie
+│   ├── ProductPage.tsx # Fiche produit
+│   ├── SearchPage.tsx  # Résultats de recherche
+│   └── NotFound.tsx    # Page 404
+├── lib/                # Utilitaires et helpers
+│   └── api.ts         # Adaptateur API avec mock data
+├── data/               # Données mock JSON
+│   ├── categories.json
+│   └── products.json
+├── types/              # Types TypeScript
+│   └── index.ts
+└── index.css          # Design system global
+```
 
-## What technologies are used for this project?
+### Pages & Routes
 
-This project is built with:
+- `/` - Accueil (hero, nouveautés, catégories, produits populaires)
+- `/categories/:slug` - Liste des produits par catégorie
+- `/produits/:slug` - Fiche produit détaillée
+- `/recherche?q=...` - Résultats de recherche
+- `*` - Page 404
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🎯 Fonctionnalités
 
-## How can I deploy this project?
+### ✅ Implémenté
 
-Simply open [Lovable](https://lovable.dev/projects/56683139-87bb-4719-9842-9fd48d9e25e3) and click on Share -> Publish.
+- ✅ Navigation responsive avec recherche globale
+- ✅ Grille de catégories avec images
+- ✅ Cartes produits avec badges (Nouveau, Populaire, Best-seller)
+- ✅ Fiche produit avec galerie d'images
+- ✅ Recherche instantanée
+- ✅ Filtres par catégorie
+- ✅ Mock data avec types TypeScript
+- ✅ Adaptateur API prêt pour intégration backend
+- ✅ SEO optimisé (meta tags, semantic HTML)
+- ✅ Animations fluides
+- ✅ Design system cohérent
+- ✅ Responsive mobile-first
 
-## Can I connect a custom domain to my Lovable project?
+### 🔜 À venir (backend)
 
-Yes, you can!
+- Pagination/infinite scroll
+- Filtres avancés (tags, couleurs, matières)
+- Tri (alphabétique, récence, popularité)
+- Tests unitaires
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔌 Intégration API
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Configuration
+
+Le projet est configuré pour basculer facilement entre mock data et API réelle :
+
+1. Copier `.env.example` vers `.env`
+2. Configurer les variables :
+
+```env
+USE_MOCK=false
+VITE_API_BASE_URL=https://api.votresite.fr
+```
+
+### Endpoints API attendus
+
+```typescript
+// Catégories
+GET /api/v1/categories
+GET /api/v1/categories/{slug}
+
+// Produits
+GET /api/v1/products?search=...&category=...&tags[]=...&visible=1&featured=1&page=1&per_page=20
+GET /api/v1/products/{slug}
+```
+
+### Format des données
+
+Voir les types dans `src/types/index.ts` :
+
+- `Category` : id, name, slug, description, parentId, image
+- `Product` : id, name, slug, descriptions, categoryIds, tags, images, specs, etc.
+
+## 🎨 Design System
+
+Le design system est défini dans :
+- `src/index.css` - Variables CSS (couleurs HSL, ombres, gradients)
+- `tailwind.config.ts` - Configuration Tailwind (animations, keyframes)
+
+### Couleurs principales
+
+- **Primary** : Noir premium (#0A0A0A)
+- **Accent** : Rouge dynamique (#DC2626)
+- **Muted** : Gris métallique
+- **Background** : Blanc cassé / Noir profond (dark mode)
+
+### Animations
+
+- `animate-fade-in` - Apparition en fondu
+- `animate-fade-in-up` - Apparition + translation
+- `animate-scale-in` - Zoom doux
+- `animate-shine` - Effet brillance
+
+## 📱 Responsive
+
+Breakpoints Tailwind :
+- `sm`: 640px
+- `md`: 768px
+- `lg`: 1024px
+- `xl`: 1280px
+- `2xl`: 1400px
+
+## ♿ Accessibilité
+
+- Navigation au clavier
+- Textes alternatifs sur images
+- Contrastes WCAG AA
+- Semantic HTML (`<header>`, `<main>`, `<nav>`, `<footer>`)
+- Focus visible sur tous les éléments interactifs
+
+## 🚀 Performance
+
+- Lazy loading des images (`loading="lazy"`)
+- Code splitting automatique (Vite)
+- Optimisation des images
+- Cache avec React Query
+
+## 📄 Licence
+
+Tous droits réservés - Bouch Auto © 2025
+
+## 🤝 Support
+
+Pour toute question : contact@bouchauto.fr

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Intérieur",
+    "slug": "interieur",
+    "description": "Accessoires et décorations pour l'habitacle",
+    "image": "/images/categories/interior.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Extérieur",
+    "slug": "exterieur",
+    "description": "Accessoires pour embellir l'extérieur de votre véhicule",
+    "image": "/images/categories/exterior.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Éclairage",
+    "slug": "eclairage",
+    "description": "LED et éclairages personnalisés",
+    "image": "/images/categories/lighting.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Tech & Audio",
+    "slug": "tech-audio",
+    "description": "Gadgets technologiques et systèmes audio",
+    "image": "/images/categories/tech.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Entretien",
+    "slug": "entretien",
+    "description": "Produits et accessoires d'entretien",
+    "image": "/images/categories/maintenance.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Sécurité",
+    "slug": "securite",
+    "description": "Accessoires de sécurité et protection",
+    "image": "/images/categories/security.jpg"
+  }
+]
